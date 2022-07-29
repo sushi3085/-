@@ -3,14 +3,39 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>成語大猜謎</title>
+    <title>成語大作戰</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css.css'>
-    <script src='main.js'></script>
 </head>
 <body>
-    <div class="title">成語大猜謎</div>
-    <div class="container"></div>
-    <div class="container"></div>
+    <div class="title">成語大作戰</div>
+    <div class="subtitle">挑戰頭腦、休閒娛樂、好友競賽</div>
+    <div class="questioncontainer">
+        <div class="qword">飲</div>
+        <div class="qword">水</div>
+        <div class="qword">思</div>
+        <div class="qword">源</div>
+    </div>
+    <div class="space"></div>
+    <div class="answerzone">
+        <div class="button" onclick="btnClicked(0);"><div class="word">飲</div></div>
+        <div class="button" onclick="btnClicked(1);"><div class="word">水</div></div>
+        <div class="button" onclick="btnClicked(2);"><div class="word">思</div></div>
+        <div class="button" onclick="btnClicked(3);"><div class="word">源</div></div>
+        <!-- <div class="button" onclick="btnClicked(4);"><div class="word">明</div></div>
+        <div class="button" onclick="btnClicked(5);"><div class="word">禁</div></div>
+        <div class="button" onclick="btnClicked(6);"><div class="word">聊</div></div>
+        <div class="button" onclick="btnClicked(7);"><div class="word">刻</div></div>
+        <div class="button" onclick="btnClicked(8);"><div class="word">秋</div></div> -->
+    </div>
+    <div class="space"></div>
+    <div>
+        <span class="score">得分:</span>
+        <span class="score" id="score">0</span>
+    </div>
 </body>
 </html>
+<script src='main.js'></script>
+
+<!-- 找中文內嵌字體 -->
+<!-- 爬成語 -->

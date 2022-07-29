@@ -1,9 +1,8 @@
 /* 字型 */
-@font-face {
+/* @font-face {
     font-family: 'IanSui';
-    src: url('./Iansui.ttf') format('truetype')
-}
-
+    src: url('https://github.com/sushi3085/Idiom-Game/raw/main/Iansui.ttf') format('truetype');
+} */
 
 
 body {
@@ -16,11 +15,85 @@ body {
 
 .title {
     font-family: IanSui;
+    font-size: 45px;
 }
 
-.container {
-    width: max(300px, 80%);
-    height: 200px;
-    background-color: brown;
-    border: rebeccapurple dashed 2px;
+.subtitle {
+    font-family: IanSui;
+    font-size: small;
+}
+
+
+.questioncontainer {
+    width: max(300px, 80vw);
+    height: min(100px, 80vw);
+
+    background: rgb(145, 235, 241);
+    background: radial-gradient(circle, rgb(145, 235, 241), rgb(250, 235, 215) 75%);
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.space {
+    height: 50px;
+}
+
+.answerzone {
+    width: min(300px, 80vw);
+    height: min(300px, 80vw);
+    background-color: pink;
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-radius: 5px;
+}
+
+.qword {
+    width: min(23%);
+    height: 100%;
+
+    margin: auto;
+    background-color: rgb(174, 209, 255);
+
+    border: rgb(61, 145, 255) 2px solid;
+    border-radius: 20px;
+
+    line-height: 100px;
+    text-align: center;
+
+    font-size: 55px;
+}
+
+/*  */
+
+.button {
+    width: min(150px, 48%);
+    height: min(150px, 48%);
+
+    margin: auto;
+    border-radius: 10px;
+
+    font-family: 'Iansui';
+    background-color: aliceblue;
+}
+
+.word {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    line-height: 150px;
+
+    font-size: 80px;
+}
+
+.score {
+    font-family: monospace;
+    font-size: 45px;
 }
