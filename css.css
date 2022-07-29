@@ -1,0 +1,26 @@
+/* 字型 */
+@font-face {
+    font-family: 'IanSui';
+    src: url('./Iansui.ttf') format('truetype')
+}
+
+
+
+body {
+    margin: 16px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.title {
+    font-family: IanSui;
+}
+
+.container {
+    width: max(300px, 80%);
+    height: 200px;
+    background-color: brown;
+    border: rebeccapurple dashed 2px;
+}
