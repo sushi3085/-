@@ -2,8 +2,19 @@ function getRandomUntil(limit) {
     return Math.floor(Math.random() * limit);
 }
 
+function shuffle(){
+    for(let i=0; i<idioms.length; i++){
+        let pickedIndex = getRandomUntil(idioms.length)
+        let temp = idioms[pickedIndex]
+        idioms[pickedIndex] = idioms[i]
+        idioms[i] = temp
+    }
+}
+
 function init() {
-    idiom = idioms[getRandomUntil(idioms.length)]; // "AABC"
+    shuffle();
+    currentQuizIndex = 0;
+    idiom = idioms[currentQuizIndex]; // "AABC"
     unknownIndex = getRandomUntil(idiom.length);
     console.log(unknownIndex)
 
@@ -29,7 +40,7 @@ function updateButtonChar() {
     console.log(answerChar)
     for (let i = 0; i < UIButtons.length;) {
         let char = getRandomChar()
-        if (candidate.indexOf(char) != -1 || candidate.indexOf(answerChar) != -1) continue
+        if (candidate.indexOf(char) != -1 || char == answerChar) continue
         candidate += char
         UIButtons[i].innerHTML = char
         i++
@@ -99,6 +110,7 @@ var unknownIndex = getRandomUntil(idioms.length);
 var answerChar = "";
 var score = 0;
 var UIButtons = document.getElementsByClassName("word")
+var currentQuizIndex = 0;
 init()
 
 
