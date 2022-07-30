@@ -31,15 +31,15 @@ body {
     background: rgb(145, 235, 241);
     background: radial-gradient(circle, rgb(145, 235, 241), rgb(250, 235, 215) 75%);
 
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     display: flex;
     flex-direction: row;
 }
 
 .space {
-    height: 50px;
+    height: 25px;
 }
 
 .answerzone {
@@ -74,8 +74,8 @@ body {
 /*  */
 
 .button {
-    width: min(150px, 48%);
-    height: min(150px, 48%);
+    width: 48%;
+    height: 48%;
 
     margin: auto;
     border-radius: 10px;

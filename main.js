@@ -114,7 +114,7 @@ var currentQuizIndex = 0;
 init()
 
 
-// 三次挑戰機會
+// 三次挑戰機會 nope
 // 考慮把選項改成四個 done
 
 // 答對視覺效果 done
